@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion | E-Learn</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo"><a href="pages/site.html">Logo</a></h1>
+        <ul>
+          <li><a href="index.html">Connexion</a></li>
+          <li><a href="pages/inscription.html">S'inscrire</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <h2>Bienvenue sur notre site !</h2>
+        <p>
+          Commencez votre voyage d'apprentissage en vous connectant à votre
+          compte.
+        </p>
+      </section>
+
+      <section class="login">
+        <h2>Connexion</h2>
+        <form action="#" method="POST">
+          <!-- <label for="email" class="label">Email :</label> <br> -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="input-enter e-input"
+            placeholder="E-mail"
+          />
+          <br />
+          <!-- <label for="motDePasse" class="label">Mot de passe :</label> <br> -->
+          <input
+            type="password"
+            id="motDePasse"
+            name="motDePasse"
+            required
+            class="input-enter"
+            placeholder="Mot de passe"
+          />
+          <br />
+          <input type="submit" value="Se connecter" class="btn" />
+        </form>
+        <p>
+          Vous ête nouveau ?, <a href="pages/inscription.html">S'inscrire</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

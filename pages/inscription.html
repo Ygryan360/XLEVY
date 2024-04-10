@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S'inscrire | E-Learn</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo"><a href="site.html">Logo</a></h1>
+        <ul>
+          <li><a href="../index.html">Connexion</a></li>
+          <li><a href="inscription.html">S'inscrire</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <h2>Bienvenue sur notre site !</h2>
+        <p>Commencez votre voyage d'apprentissage en vous inscrivant.</p>
+      </section>
+
+      <section class="login">
+        <h2>Inscription</h2>
+        <form action="#" method="POST">
+            <div class="name-input">
+                <input 
+                type="text" 
+                id="nom" 
+                name="nom" 
+                required 
+                placeholder="Nom" 
+                />
+                <!-- <br /> -->
+                <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                required
+                placeholder="Prénoms"
+                />
+            </div>
+          <!-- <br /> -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="E-mail"
+            class="input-enter"
+          />
+          <br />
+          <input
+            type="password"
+            id="motDePasse"
+            name="motDePasse"
+            required
+            placeholder="Mot de passe"
+            class="input-enter"
+          />
+          <input
+            type="password"
+            id="motDePasseConfirm"
+            name="motDePasseConfirm"
+            required
+            placeholder="Confirmer le mot de passe"
+            class="input-enter"
+          />
+          <br />
+          <input type="submit" value="S'inscrire" class="btn" />
+        </form>
+        <p>
+          Vous avez déjà un compte ?, <a href="../index.html">Se connecter</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
