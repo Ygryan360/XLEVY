@@ -31,6 +31,7 @@
   font-weight: 700;
   color: var(--title-color);
 }
+
 .subtitle-2 {
   font-family: var(--title-font);
   font-size: var(--subtitle-size);
@@ -68,14 +69,17 @@
   /* border: solid 1px var(--back-color-trans); */
   box-shadow: var(--shadow);
 }
+
 .container-title {
   color: var(--btn-color);
   font-size: 1.2rem;
   font-family: var(--title-font);
 }
+
 .main-container .text {
   text-align: start;
 }
+
 .main-container {
   display: flex;
   justify-content: space-between;
@@ -83,9 +87,37 @@
   border: 0;
   height: max-content;
 }
-.main-container section {
-  width: 100%;
+
+.main-welcome{
+  background-image: url(../img/headerbg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10vh 0;
+  color: #fff;
 }
+.main-welcome h1{
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  /* color: var(--subtile-color); */
+  font-weight: 700;
+  /* color: var(--title-color); */
+}
+.main-welcome h2{
+  font-family: var(--title-font);
+  font-size: 2rem;
+  /* color: var(--subtile-color); */
+  font-weight: 600;
+  /* color: var(--title-color); */
+}
+.main-welcome p{
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  /* color: var(--subtile-color); */
+  font-weight: 600;
+  /* color: var(--title-color); */
+}
+
+
 .max-title {
   width: 100%;
   background-color: black;
@@ -106,6 +138,7 @@
   /* border-radius: var(--bord-radius); */
   background-color: #00000000;
 }
+
 .comment .btn {
   width: 30rem;
 }
@@ -114,6 +147,7 @@
   border-radius: var(--bord-radius);
   width: 93%;
 }
+
 .science-container-img {
   border-radius: var(--bord-radius);
   width: 93%;
@@ -125,6 +159,7 @@
   align-items: center;
   margin: 0 auto;
 }
+
 .history-container-img {
   border-radius: var(--bord-radius);
   width: 93%;
@@ -136,6 +171,7 @@
   align-items: center;
   margin: 0 auto;
 }
+
 .litterature-container-img {
   border-radius: var(--bord-radius);
   width: 93%;
@@ -147,6 +183,12 @@
   align-items: center;
   margin: 0 auto;
 }
+
+/* .hover-blur:hover{
+  backdrop-filter: blur(10px);
+  padding: 100%; 
+} */
+
 .langues-container-img {
   border-radius: var(--bord-radius);
   width: 93%;
@@ -159,11 +201,126 @@
   margin: 0 auto;
 }
 
+.main-container section{
+  transition: 0.4s;
+  height: 178vh;
+  width: 100%;
+}
+
+.main-container section:hover{
+  cursor: pointer;
+  box-shadow:  1px 1px 5px 0 #1e293b;
+}
+
 .main-container-title {
   font-family: var(--title-font);
   font-size: var(--title-size);
   color: var(--btn-text-color);
 }
+
+.stat-container-1{
+  width: 95%;
+  background-color: var(--back-color-trans);
+  border-radius: var(--bord-radius);
+  overflow: hidden;
+  margin: 5vh auto 0 auto;
+}
+
+.skills{
+  text-align: right;
+  padding: 10px 20px 10px 0;
+  color: #fff;
+  font-family: var(--text-font);
+}
+
+.stat_1{
+  width: 48%;
+  background-color: var(--btn-color);
+  animation: animation_1 3s ease-in-out forwards;
+}
+@keyframes animation_1 {
+    0%{
+        width: 0;
+        margin-left: -50px;
+    }
+    100%{
+        width: 48%;
+    }
+}
+
+.stat-container-2{
+  width: 95%;
+  background-color: var(--back-color-trans);
+  border-radius: var(--bord-radius);
+  overflow: hidden;
+  margin: 8.2vh auto 0 auto;
+}
+.stat_2{
+  width: 32%;
+  background-color: var(--btn-color);
+  animation: animation_2 3s ease-in-out forwards;
+}
+@keyframes animation_2 {
+    0%{
+        width: 0;
+        margin-left: -50px;
+    }
+    100%{
+        width: 32%;
+    }
+}
+
+.stat-container-3{
+  width: 95%;
+  background-color: var(--back-color-trans);
+  border-radius: var(--bord-radius);
+  overflow: hidden;
+  margin: 8.2vh auto 0 auto;
+}
+.stat_3{
+  width: 62%;
+  background-color: var(--btn-color);
+  animation: animation_3 3s ease-in-out forwards;
+}
+@keyframes animation_3 {
+    0%{
+        width: 0;
+        margin-left: -50px;
+    }
+    100%{
+        width: 62%;
+    }
+}
+
+.stat-container-4{
+  width: 95%;
+  background-color: var(--back-color-trans);
+  border-radius: var(--bord-radius);
+  overflow: hidden;
+  margin: 8.2vh auto 0 auto;
+}
+.stat_4{
+  width: 75%;
+  background-color: var(--btn-color);
+  animation: animation_4 3s ease-in-out forwards;
+}
+@keyframes animation_4 {
+    0%{
+        width: 0;
+        margin-left: -50px;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+
+
+
+
+
+
+
 .footer-box {
   background-color: var(--title-color);
   margin: var(--bord-radius);
@@ -174,10 +331,12 @@
   /* border: solid 1px var(--back-color-trans); */
   box-shadow: var(--shadow);
 }
+
 .footer-box p {
   color: var(--btn-text-color);
   font-family: var(--text-font);
 }
+
 .footer-box p span {
   color: var(--btn-color);
 }
@@ -191,49 +350,49 @@
     text-align: center;
   }
   .science-container-img {
-  border-radius: var(--bord-radius);
-  background-image: url(../img/science.jpg);
-  width: 90%;
-  height: 20rem;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.history-container-img {
-  border-radius: var(--bord-radius);
-  background-image: url(../img/history.jpg);
-  width: 90%;
-  height: 20rem;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.litterature-container-img {
-  border-radius: var(--bord-radius);
-  background-image: url(../img/litterature.jpg);
-  width: 90%;
-  height: 20rem;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.langues-container-img {
-  border-radius: var(--bord-radius);
-  background-image: url(../img/language.jpg);
-  width: 90%;
-  height: 20rem;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
+    border-radius: var(--bord-radius);
+    background-image: url(../img/science.jpg);
+    width: 90%;
+    height: 20rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .history-container-img {
+    border-radius: var(--bord-radius);
+    background-image: url(../img/history.jpg);
+    width: 90%;
+    height: 20rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .litterature-container-img {
+    border-radius: var(--bord-radius);
+    background-image: url(../img/litterature.jpg);
+    width: 90%;
+    height: 20rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .langues-container-img {
+    border-radius: var(--bord-radius);
+    background-image: url(../img/language.jpg);
+    width: 90%;
+    height: 20rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 @media all and (max-width: 531px) {
   /* body{
