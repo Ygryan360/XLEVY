@@ -26,39 +26,75 @@
       <div class="box main-welcome">
         <h1 class="subtitle-1">Mon Site d'Apprentissage Général</h1>
         <h2 class="subtitle-2">Bienvenue sur notre site !</h2>
-        <p class="text">Commencez votre voyage d'apprentissage en explorant nos différents cours.</p>
+        <p class="text">
+          Commencez votre voyage d'apprentissage en explorant nos différents
+          cours.
+        </p>
       </div>
-
+      
       <div class="box main-container">
         <section class="science box">
           <h2 class="container-title">Sciences</h2>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate quam est pariatur beatae incidunt, soluta reiciendis nisi doloribus minima saepe praesentium porro fugiat harum eaque dicta perferendis. Culpa, rerum.</p>
+          <img src="../img/science.jpg" alt="Science" class="container-img">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            voluptate quam est pariatur beatae incidunt, soluta reiciendis nisi
+            doloribus minima saepe praesentium porro fugiat harum eaque dicta
+            perferendis. Culpa, rerum.
+          </p>
+          <br>
+          <h1 class="subtitle-2 center">Tutoriels</h1>
+          <a href="tutoriel1.html" class="link">Tutoriel 1</a>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, laudantium vero!</p>
+          <a href="tutoriel2.html" class="link">Tutoriel 2</a>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, laudantium vero!</p>
+          <br>
+          
         </section>
         <section class="box Histoire">
           <h2 class="container-title">Histoire</h2>
-          <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat distinctio temporibus quod ullam ea cum saepe iste adipisci quos. Repudiandae officia, saepe doloribus hic ipsum eos vitae consequuntur harum vel?</p>
+          <img src="../img/history.jpg" alt="Science" class="container-img">
+          <p class="text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            distinctio temporibus quod ullam ea cum saepe iste adipisci quos.
+            Repudiandae officia, saepe doloribus hic ipsum eos vitae
+            consequuntur harum vel?
+          </p>
         </section>
         <section class="box litterature">
           <h2 class="container-title">Littérature</h2>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis dolor reiciendis? Facilis sed ad corporis recusandae temporibus porro id fugit vitae cum nisi, omnis accusamus blanditiis voluptates voluptate est!</p>
+          <img src="../img/litterature.jpg" alt="Science" class="container-img">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            debitis dolor reiciendis? Facilis sed ad corporis recusandae
+            temporibus porro id fugit vitae cum nisi, omnis accusamus blanditiis
+            voluptates voluptate est!
+          </p>
         </section>
         <section class="box langues">
           <h2 class="container-title">Langues</h2>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorum assumenda, delectus beatae explicabo alias perspiciatis hic, animi aut praesentium mollitia placeat expedita laborum impedit provident quae repellendus? Iure, magnam.</p>
+          <img src="../img/language.jpg" alt="Science" class="container-img">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            dolorum assumenda, delectus beatae explicabo alias perspiciatis hic,
+            animi aut praesentium mollitia placeat expedita laborum impedit
+            provident quae repellendus? Iure, magnam.
+          </p>
         </section>
       </div>
-      
+
       <div class="comment box">
-        <h2 class="subtitle-2">Laissez un commentaire </h2>
+        <h2 class="subtitle-2">Laissez un commentaire</h2>
         <form method="POST">
-          <textarea
+          <input type="text" name="commentaire" id="commentaire" placeholder="Ecrivez votre commentaire ici:" class="comment-text-aera" required />
+          <!-- <textarea
             id="commentaire"
             name="commentaire"
             rows="1"
             required
             placeholder="Ecrivez votre commentaire ici:"
             class="comment-text-aera"
-          ></textarea>
+          ></textarea> -->
           <br />
           <input type="submit" value="Envoyer" class="btn" />
         </form>

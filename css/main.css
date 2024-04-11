@@ -6,7 +6,7 @@
   --text-font: "Inter", sans-serif;
   --title-color: #334155;
   --text-color: #526074;
-  --subtile-color: #36495a;
+  --subtitle-color: #36495a;
   --btn-color: #517bee;
   --btn-text-color: #fff;
   --bord-radius: 0.5rem;
@@ -14,7 +14,7 @@
   --subtitle-size: 1.5rem;
   --text-size: 1.1rem;
   --back-color-trans: #c0cbffa6;
-  --bg-color-box: #c2caf36c;
+  --bg-color-box: #1e293b08;;
   --shadow: 1px 1px 5px 0 #1e293b1f;
 }
 
@@ -34,7 +34,7 @@
 .subtitle-2 {
   font-family: var(--title-font);
   font-size: var(--subtitle-size);
-  color: var(--subtile-color);
+  color: var(--subtitle-color);
   font-weight: 600;
 }
 
@@ -90,18 +90,32 @@
   align-items: center;
 }
 
+.comment{
+  /* width: 50%; */
+}
 .comment-text-aera {
   /* background-color: var(--back-color-trans); */
   text-align: center;
   height: 2rem;
   border: 0;
   font-family: var(--text-font);
-  width: 70%;
+  width: 50%;
   margin: 10px;
   font-size: var(--text-size);
   border-bottom: solid 2px var(--btn-color);
-  border-radius: var(--bord-radius);
+  /* border-radius: var(--bord-radius); */
+  background-color: #00000000;
 }
+.comment .btn{
+  width: 30rem;
+}
+
+.container-img{
+  border-radius: var(--bord-radius);
+  width: 93%;
+}
+
+
 
 /* Media queries*/
 @media all and (max-width: 497px) {
