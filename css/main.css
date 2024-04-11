@@ -1,0 +1,190 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+:root {
+  --title-font: "Poppins", sans-serif;
+  --text-font: "Inter", sans-serif;
+  --title-color: #334155;
+  --text-color: #526074;
+  --subtile-color: #36495a;
+  --btn-color: #517bee;
+  --btn-text-color: #fff;
+  --bord-radius: 0.5rem;
+  --title-size: 3rem;
+  --subtitle-size: 1.5rem;
+  --text-size: 1.1rem;
+  --back-color-trans: #c0cbffa6;
+  --bg-color-box: #c2caf36c;
+  --shadow: 1px 1px 5px 0 #1e293b1f;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  color: var(--title-color);
+}
+
+.subtitle-1 {
+  font-family: var(--title-font);
+  font-size: var(--subtitle-size);
+  color: var(--subtile-color);
+  font-weight: 700;
+  color: var(--title-color);
+}
+.subtitle-2 {
+  font-family: var(--title-font);
+  font-size: var(--subtitle-size);
+  color: var(--subtile-color);
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: var(--text-size);
+  font-family: var(--text-font);
+  font-weight: 450;
+  margin: 5px 15px;
+}
+
+.link {
+  color: var(--btn-color);
+  font-family: var(--title-font);
+  font-weight: bold;
+  padding: 3px 55px;
+  border-radius: 8px;
+}
+
+.box {
+  background-color: var(--bg-color-box);
+  margin: var(--bord-radius);
+  text-align: center;
+  height: max-content;
+  padding: 1rem 0;
+  border-radius: var(--bord-radius);
+  border: solid 1px var(--back-color-trans);
+}
+.container-title {
+  color: var(--btn-color);
+  font-size: 1.2rem;
+  font-family: var(--title-font);
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 0;
+  height: max-content;
+}
+.main-container section {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+.max-title {
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  align-items: center;
+}
+
+.comment-text-aera {
+  /* background-color: var(--back-color-trans); */
+  text-align: center;
+  height: 2rem;
+  border: 0;
+  font-family: var(--text-font);
+  width: 70%;
+  margin: 10px;
+  font-size: var(--text-size);
+  border-bottom: solid 2px var(--btn-color);
+  border-radius: var(--bord-radius);
+}
+
+/* Media queries*/
+@media all and (max-width: 497px) {
+  /* body{
+        position: relative; 
+    } */
+  header nav {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    left: -600px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.754);
+    backdrop-filter: blur(15px);
+  }
+  header nav ul li a {
+    text-transform: uppercase;
+  }
+  header nav ul li {
+    margin: 20px 0;
+  }
+  .button {
+    width: 50px;
+    height: 50px;
+    /* background-color: #00000044; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+  .button::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    box-shadow: 0 10px #000;
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+  .button.active::after {
+    box-shadow: 0 0 0 #000;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+  .button.active::before {
+    box-shadow: 0 0 0 #000;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  header nav ul.active {
+    left: 0;
+    transition: 0.5s;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .main-container section {
+    width: 95%;
+    height: max-content;
+    margin: 10px auto;
+  }
+  footer {
+    padding: 0 15px;
+  }
+}
