@@ -23,8 +23,8 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #F0F4F9;
+body {
+  background-color: #f0f4f9;
 }
 header nav {
   display: flex;
@@ -39,7 +39,7 @@ header nav {
   padding: 0 30px;
 }
 
-.login-container{
+.login-container {
   height: 80vh;
 }
 
@@ -78,24 +78,24 @@ main {
   /* height: 80vh; */
 }
 
-main .welcome{
+main .welcome {
   text-align: center;
   margin: 10px 0;
 }
 
-main .welcome h2{
+main .welcome h2 {
   font-size: var(--title-size);
   color: var(--title-color);
   font-family: var(--title-font);
 }
 
-main .welcome p{
+main .welcome p {
   font-family: var(--text-font);
   font-size: var(--text-size);
   color: var(--text-color);
 }
 
-main .login{
+main .login {
   align-items: center;
   text-align: center;
   width: 100%;
@@ -103,13 +103,13 @@ main .login{
   margin-right: auto;
 }
 
-main .login h2{
+main .login h2 {
   font-family: var(--title-font);
   color: var(--title-color);
   font-size: var(--subtitle-size);
 }
 
-.input-enter{
+.input-enter {
   color: var(--title-color);
   background-color: var(--back-color-trans);
   border-radius: var(--bord-radius);
@@ -123,7 +123,7 @@ main .login h2{
 }
 
 /* main .login  */
-.btn{
+.btn {
   color: var(--btn-text-color);
   background-color: var(--btn-color);
   border-radius: var(--bord-radius);
@@ -136,14 +136,14 @@ main .login h2{
   cursor: pointer;
 }
 
-main .login p{
+main .login p {
   color: var(--title-color);
   font-size: var(--text-size);
   font-family: var(--text-font);
   margin-top: 15px;
 }
 
-main .login .name-input input{
+main .login .name-input input {
   color: var(--title-color);
   background-color: var(--back-color-trans);
   border-radius: var(--bord-radius);
@@ -156,7 +156,7 @@ main .login .name-input input{
   font-size: var(--text-size);
 }
 
-main .login p a{
+main .login p a {
   color: var(--btn-color);
   font-weight: bold;
   text-decoration: underline;
@@ -180,10 +180,10 @@ main .login p a{
   border-radius: var(--bord-radius);
   box-shadow: var(--shadow);
 }
-.footer-box p{
+.footer-box p {
   color: var(--btn-text-color);
   font-family: var(--text-font);
 }
-.footer-box p span{
+.footer-box p span {
   color: var(--btn-color);
 }
