@@ -14,10 +14,14 @@
   --subtitle-size: 1.5rem;
   --text-size: 1.1rem;
   --back-color-trans: #c0cbffa6;
-  --bg-color-box: #f0f4f9;
+  --bg-color-box: #ffffff;
   --shadow: 1px 1px 5px 0 #1e293b1f;
+  --progress-transition: 5s;
 }
 
+body{
+  background-color: #F0F4F9;
+}
 .title {
   font-family: var(--title-font);
   font-size: var(--title-size);
@@ -83,7 +87,6 @@
 .main-container {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
   border: 0;
   height: max-content;
 }
@@ -236,7 +239,7 @@
 .stat_1{
   width: 48%;
   background-color: var(--btn-color);
-  animation: animation_1 3s ease-in-out forwards;
+  animation: animation_1 var(--progress-transition) ease-in-out forwards;
 }
 @keyframes animation_1 {
     0%{
@@ -258,7 +261,7 @@
 .stat_2{
   width: 32%;
   background-color: var(--btn-color);
-  animation: animation_2 3s ease-in-out forwards;
+  animation: animation_2 var(--progress-transition) ease-in-out forwards;
 }
 @keyframes animation_2 {
     0%{
@@ -280,7 +283,7 @@
 .stat_3{
   width: 62%;
   background-color: var(--btn-color);
-  animation: animation_3 3s ease-in-out forwards;
+  animation: animation_3 var(--progress-transition) ease-in-out forwards;
 }
 @keyframes animation_3 {
     0%{
@@ -302,7 +305,7 @@
 .stat_4{
   width: 75%;
   background-color: var(--btn-color);
-  animation: animation_4 3s ease-in-out forwards;
+  animation: animation_4 var(--progress-transition) ease-in-out forwards;
 }
 @keyframes animation_4 {
     0%{
@@ -313,10 +316,6 @@
         width: 75%;
     }
 }
-
-
-
-
 
 
 
