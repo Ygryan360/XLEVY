@@ -28,7 +28,7 @@ body{
 }
 header nav {
   display: flex;
-  height: 10vh;
+  height: 5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.349);
   top: 0;
   position: fixed;
@@ -37,6 +37,10 @@ header nav {
   background-color: var(--bg-color-box);
   align-items: center;
   padding: 0 30px;
+}
+
+.login-container{
+  height: 80vh;
 }
 
 header nav h1 a {
@@ -97,9 +101,6 @@ main .login{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  /* border-radius: var(--bord-radius);
-  background-color: var(--back-color-trans);
-  padding: 15px 10%; */
 }
 
 main .login h2{
@@ -108,7 +109,6 @@ main .login h2{
   font-size: var(--subtitle-size);
 }
 
-/* main .login form  */
 .input-enter{
   color: var(--title-color);
   background-color: var(--back-color-trans);
@@ -169,7 +169,6 @@ main .login p a{
   height: max-content;
   padding: 1rem 0;
   border-radius: var(--bord-radius);
-  /* border: solid 1px var(--back-color-trans); */
   box-shadow: var(--shadow);
 }
 .footer-box {
@@ -179,7 +178,6 @@ main .login p a{
   height: max-content;
   padding: 1rem 0;
   border-radius: var(--bord-radius);
-  /* border: solid 1px var(--back-color-trans); */
   box-shadow: var(--shadow);
 }
 .footer-box p{

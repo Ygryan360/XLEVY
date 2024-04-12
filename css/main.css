@@ -206,7 +206,6 @@ body{
 
 .main-container section{
   transition: 0.4s;
-  height: 178vh;
   width: 100%;
 }
 
@@ -221,13 +220,6 @@ body{
   color: var(--btn-text-color);
 }
 
-.stat-container-1{
-  width: 95%;
-  background-color: var(--back-color-trans);
-  border-radius: var(--bord-radius);
-  overflow: hidden;
-  margin: 5vh auto 0 auto;
-}
 
 .skills{
   text-align: right;
@@ -242,84 +234,127 @@ body{
   animation: animation_1 var(--progress-transition) ease-in-out forwards;
 }
 @keyframes animation_1 {
-    0%{
+  0%{
         width: 0;
         margin-left: -50px;
-    }
+      }
     100%{
         width: 48%;
     }
-}
+  }
+  
+  .stat_2{
+    width: 32%;
+    background-color: var(--btn-color);
+    animation: animation_2 var(--progress-transition) ease-in-out forwards;
+  }
+  @keyframes animation_2 {
+      0%{
+          width: 0;
+          margin-left: -50px;
+      }
+      100%{
+          width: 32%;
+      }
+  }
 
-.stat-container-2{
-  width: 95%;
+  .stat_3{
+    width: 62%;
+    background-color: var(--btn-color);
+    animation: animation_3 var(--progress-transition) ease-in-out forwards;
+  }
+  @keyframes animation_3 {
+      0%{
+          width: 0;
+          margin-left: -50px;
+      }
+      100%{
+          width: 62%;
+      }
+  }
+
+  .stat_4{
+    width: 75%;
+    background-color: var(--btn-color);
+    animation: animation_4 var(--progress-transition) ease-in-out forwards;
+  }
+  @keyframes animation_4 {
+      0%{
+          width: 0;
+          margin-left: -50px;
+      }
+      100%{
+          width: 75%;
+      }
+  }
+
+  .stat-container-1{
+    width: 95%;
+    background-color: var(--back-color-trans);
+    border-radius: var(--bord-radius);
+    overflow: hidden;
+    margin: 5vh auto 0 auto;
+  }
+  .stat-container-2{
+    width: 95%;
   background-color: var(--back-color-trans);
   border-radius: var(--bord-radius);
   overflow: hidden;
-  margin: 8.2vh auto 0 auto;
+  margin: 5vh auto 0 auto;
 }
-.stat_2{
-  width: 32%;
-  background-color: var(--btn-color);
-  animation: animation_2 var(--progress-transition) ease-in-out forwards;
-}
-@keyframes animation_2 {
-    0%{
-        width: 0;
-        margin-left: -50px;
-    }
-    100%{
-        width: 32%;
-    }
-}
-
 .stat-container-3{
   width: 95%;
   background-color: var(--back-color-trans);
   border-radius: var(--bord-radius);
   overflow: hidden;
-  margin: 8.2vh auto 0 auto;
+  margin: 5vh auto 0 auto;
 }
-.stat_3{
-  width: 62%;
-  background-color: var(--btn-color);
-  animation: animation_3 var(--progress-transition) ease-in-out forwards;
-}
-@keyframes animation_3 {
-    0%{
-        width: 0;
-        margin-left: -50px;
-    }
-    100%{
-        width: 62%;
-    }
-}
-
 .stat-container-4{
   width: 95%;
   background-color: var(--back-color-trans);
   border-radius: var(--bord-radius);
   overflow: hidden;
-  margin: 8.2vh auto 0 auto;
-}
-.stat_4{
-  width: 75%;
-  background-color: var(--btn-color);
-  animation: animation_4 var(--progress-transition) ease-in-out forwards;
-}
-@keyframes animation_4 {
-    0%{
-        width: 0;
-        margin-left: -50px;
-    }
-    100%{
-        width: 75%;
-    }
+  margin: 5vh auto 0 auto;
 }
 
+.question {
+            margin-bottom: 20px;
+        }
+
+        .question-text {
+            font-weight: bold;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .option {
+            margin-bottom: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------Footer ---------- */
 .footer-box {
   background-color: var(--title-color);
   margin: var(--bord-radius);
@@ -330,17 +365,15 @@ body{
   /* border: solid 1px var(--back-color-trans); */
   box-shadow: var(--shadow);
 }
-
 .footer-box p {
   color: var(--btn-text-color);
   font-family: var(--text-font);
 }
-
 .footer-box p span {
   color: var(--btn-color);
 }
 
-/* Media queries*/
+/* ------------Media queries------------*/
 @media all and (max-width: 1206px) {
   .main-container {
     flex-direction: column;
