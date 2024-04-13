@@ -360,6 +360,16 @@ input[type="checkbox"] {
   color: var(--btn-color);
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  /* background-color: var(--back-color-trans); */
+}
+
+
 /* ------------Media queries------------*/
 @media all and (max-width: 1206px) {
   .main-container {
