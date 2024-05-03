@@ -147,12 +147,27 @@ body {
   width: 93%;
 }
 
+.hover-blur {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--bord-radius);
+  transition: 5s;
+}
+
+.hover-blur:hover {
+  backdrop-filter: blur(15px);
+}
+
 .science-container-img {
   border-radius: var(--bord-radius);
   width: 93%;
   background-image: url(../img/science.jpg);
   height: 18rem;
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,6 +184,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-position: center;
 }
 
 .litterature-container-img {
@@ -181,6 +197,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-position: center;
 }
 
 .langues-container-img {
@@ -193,15 +210,17 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-position: center;
 }
 
 .main-container section {
-  transition: 0.4s;
+  transition: 0.5s;
   width: 100%;
 }
 
 .main-container section:hover {
   box-shadow: 1px 1px 5px 0 #1e293b;
+  transform: scale(1.05);
 }
 
 .main-container-title {
@@ -280,28 +299,28 @@ body {
 .stat-container-1 {
   width: 95%;
   background-color: var(--back-color-trans);
-  border-radius: var(--bord-radius);
+  border-radius: 5rem;
   overflow: hidden;
   margin: 5vh auto 0 auto;
 }
 .stat-container-2 {
   width: 95%;
   background-color: var(--back-color-trans);
-  border-radius: var(--bord-radius);
+  border-radius: 5rem;
   overflow: hidden;
   margin: 5vh auto 0 auto;
 }
 .stat-container-3 {
   width: 95%;
   background-color: var(--back-color-trans);
-  border-radius: var(--bord-radius);
+  border-radius: 5rem;
   overflow: hidden;
   margin: 5vh auto 0 auto;
 }
 .stat-container-4 {
   width: 95%;
   background-color: var(--back-color-trans);
-  border-radius: var(--bord-radius);
+  border-radius: 5rem;
   overflow: hidden;
   margin: 5vh auto 0 auto;
 }
@@ -312,6 +331,7 @@ body {
   width: 95%;
   padding: 1rem 1.5rem;
   border-radius: var(--bord-radius);
+  border: 1px solid #5260741c;
 }
 
 .question-text {
@@ -369,11 +389,15 @@ input[type="checkbox"] {
   /* background-color: var(--back-color-trans); */
 }
 
-
 /* ------------Media queries------------*/
 @media all and (max-width: 1206px) {
   .main-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container section{
+    width: 30rem;
   }
   .main-container .text {
     text-align: center;
@@ -421,6 +445,9 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+  }
+  .main-container section:hover {
+    transform: scale(1.01);
   }
 }
 @media all and (max-width: 531px) {
